@@ -1,0 +1,170 @@
+body,html{
+background-color:black;
+height: 100%;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+  position:fixed;
+  top:0;
+  z-index: 10;
+}
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("code.webp");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    margin:40px;
+  }
+  
+  .hero-text button {
+    margin-left: auto;
+    margin-right:auto;
+    border: none;
+    outline: 0;
+    display: block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #dddddd;
+    text-align: center;
+    cursor: pointer;  
+  }
+  .hero-text button:hover {
+    background-color: rgb(1, 6, 22);
+    color: white;
+  }
+  section {
+    padding: 100px 0;
+    height: 100vh; /* Full screen height */
+    text-align: center;
+}
+h1{
+  text-align: center;color:white
+}
+img{
+  
+  height:250px;
+  width:200px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes load {
+  from {
+      width: 0%
+  }
+}
+
+@-webkit-keyframes load {
+  from {
+      width: 0%
+  }
+}
+
+@-moz-keyframes load {
+  from {
+      width: 0%
+  }
+}
+
+@-o-keyframes load {
+  from {
+      width: 0%
+  }
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+}
+
+.bar {
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.bar::before {
+  content: attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before {
+  background-color: #ffcc33;
+}
+
+.bar.back::before {
+  background-color: #0c6a99;
+}
+
+.bar.learning::before {
+  width: calc(20% - 10px);
+}
+
+.bar.basic::before {
+  width: calc(40% - 10px);
+}
+
+.bar.intermediate::before {
+  width: calc(60% - 10px);
+}
+
+.bar.advanced::before {
+  width: calc(80% - 10px);
+}
+
+.bar.expert::before {
+  width: calc(100% - 10px);
+}
+
+.email-footer {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+}
+
+.email-footer a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.email-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.email-footer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
